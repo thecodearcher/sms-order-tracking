@@ -1,10 +1,10 @@
 ## Building an order tracking system in Laravel powered by Twilio SMS
 
-In today's world where online shopping is at an all-time high, the chances of your e-commerce site standing out are going to be based on how much you can get your customers to trust in your service(s) and level of satisfaction gotten from using your service(s). One way of improving customer satisfaction and "trust" in your online shop is by allowing your customers to gain knowledge about the current state of their package. 
+In today's world where online shopping is at an all-time high, the chances of your e-commerce site standing out are going to be based on how much you can get your customers to trust in your service(s) and the level of satisfaction gotten from using them. One way of improving customer satisfaction and "trust" in your online shop is by allowing your customers to gain knowledge about the current state of their package. 
 
-An order tracking system will allow your customers to gain more information about the current status/location (amongst other things) of their package and doing this will help increase the satisfaction levels of your customers as they too will have detailed insight into where their package is at any given point in time until it arrives at their desired location.
+An order tracking system will allow your customers to gain more information about the current status/location of their package. Doing this will help increase the satisfaction of your customers, as they too will have detailed insight into where their package is at any given point in time until it arrives at their desired location.
 
-In this tutorial, we will teach you how to use [Twilio’s Programmable SMS](https://www.twilio.com/sms) to create an order tracking system using Laravel. After we’re finished, you would have developed an order tracking system where users can get details about their package(s) via SMS.
+In this tutorial, you will learn how to use [Twilio’s Programmable SMS](https://www.twilio.com/sms) to create an order tracking system using Laravel and update users about their package(s) via SMS.
 
 ## Prerequisite
 
