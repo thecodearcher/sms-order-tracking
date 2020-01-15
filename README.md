@@ -11,7 +11,7 @@ In this tutorial, we will teach you how to use [Twilio’s Programmable SMS](htt
 In order to follow this tutorial, you will need:
 
 - Basic knowledge of Laravel
-- [Laravel](https://laravel.com/docs/master) Installed on your local machine
+- [Laravel](https://laravel.com/docs/master) installed on your local machine
 - [Composer](https://getcomposer.org/) globally installed
 - [MySQL](https://www.mysql.com/downloads/) setup on your local machine
 - [Twilio Account](https://www.twilio.com/try-twilio?promo=B2YAW1)
