@@ -65,7 +65,7 @@ Next, update your `.env` file with the credentials. Open `.env` located at the r
 
 ## Mocking data
 
-At this point, you should have your base project ready! Now to continue with this tutorial, you will need to create a table that will hold the mock orders data for the application. To create the orders table, run the following command to generate an [Eloquent model](https://laravel.com/docs/6.x/eloquent) alongside a migration file which will hold the definitions for the *orders* table:
+At this point, you should have your base project ready! In order to complete this tutorial you will need to create a table that will hold the mock orders data for the application. To create the orders table, run the following command to generate an [Eloquent model](https://laravel.com/docs/6.x/eloquent) alongside a migration file which will hold the definitions for the *orders* table:
 
     $ php artisan make:model Orders --migration
 
