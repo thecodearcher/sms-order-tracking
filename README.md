@@ -309,7 +309,7 @@ As you might have figured, you will need a way to *alert* your application when 
 
 Before your application can be accessed via a webhook, it must first be accessible remotely from the internet and not just your local machine. Luckily, this can easily be accomplished by using [ngrok](https://ngrok.com/). 
 
-If you don’t have [ngrok](https://ngrok.com/) set up on your PC before now, quickly head over to their [official download page](https://ngrok.com/download) and follow the instructions to get it installed on your machine. If you already have it set up then open up your terminal and run the following commands to start your Laravel application and expose it to the internet:
+If you don’t have [ngrok](https://ngrok.com/) set up on your computer, head over to their [official download page](https://ngrok.com/download) and follow the instructions to get it installed on your machine. If you already have it set up, then open up your terminal and run the following commands to start your Laravel application and expose it to the internet:
 
     $ php artisan serve
 
@@ -317,13 +317,13 @@ If you don’t have [ngrok](https://ngrok.com/) set up on your PC before now, qu
 
     $ ngrok http 8000
 
-***NOTE:** `8000` should be replaced with the port number which your Laravel application is running on.* 
+***NOTE:** `8000` should be replaced with the port number that your Laravel application is running on.* 
 
 After successful execution of the above command, you should see a screen similar to this:
 
 ![https://paper-attachments.dropbox.com/s_F7BA2EF37979C4BF44B5AA1B9207D8D3EC9EDDE27FB9D710DDC99DD2BCB47338_1560672098731_Screenshot+from+2019-06-16+08-57-28.png](https://paper-attachments.dropbox.com/s_F7BA2EF37979C4BF44B5AA1B9207D8D3EC9EDDE27FB9D710DDC99DD2BCB47338_1560672098731_Screenshot+from+2019-06-16+08-57-28.png)
 
-Now, copy out your `forwarding` URL as this will be used shortly.
+Now, copy your `forwarding` URL as this will be used shortly.
 
 ### Updating Twilio phone number configuration
 
