@@ -226,7 +226,7 @@ Now, open up  `app/Http/Controllers/OrderController.php`  and make the following
         }
     }
 
-The `OrderController` now has two methods; `getOrder` and `sendMessage`. The `getOrder()` method will be called whenever an `order_id` is sent to your Twilio phone number and sends back an appropriate response back to the sender based on the content of the message body. This method (`getOrder`) gets the `Body` of the SMS and also the sender's phone number from the body of the request which is sent by Twilio after receiving an SMS. After retrieving the SMS data, the *Orders* table is queried with the `order_id` and after which a `$response` is sent back to the *sender* using the `sendMessage()` method depending on the results of the query. 
+The `OrderController` now has two methods; `getOrder` and `sendMessage`. The `getOrder()` method will be called whenever an `order_id` is sent to your Twilio phone number. Upon receipt, an appropriate response is sent back to the sender based on the content of the message body. This method (`getOrder`) gets the `Body` of the SMS and also the sender's phone number from the body of the request which is sent by Twilio after receiving an SMS. After retrieving the SMS data, the *Orders* table is queried with the `order_id` and a `$response` is sent back to the *sender* using the `sendMessage()` method depending on the results of the query. 
 
 The `sendMessage()` method accepts two arguments; `message` and `recipients`. Internally, the `sendMessage()` method makes use of [Twilio programmable SMS](https://www.twilio.com/docs/sms) SDK for sending out text messages:
 
@@ -245,7 +245,7 @@ The `sendMessage()` method accepts two arguments; `message` and `recipients`. In
                 array('from' => $twilio_number, 'body' => $message));
         }
 
-The *Twilio Client SDK* requires your *Twilio credentials* to be instantiated, using the inbuilt PHP [`getenv()`](https://www.php.net/manual/en/function.getenv.php) function, you can retrieve your Twilio credentials stored in your `.env` in the earlier parts of this tutorial. After creating an instance of the Twilio Client, you can then proceed to send an SMS by calling the `$client->messages->create()` method. This method accepts two arguments of a receiver which can either be a `string` or an `array` of phone numbers and an *array* with the properties of `from` and `body` where `from` is your active Twilio phone number and `body` is the text you want to be sent to the *recipients*. 
+The *Twilio Client SDK* requires your *Twilio credentials* to be instantiated, using the built-in PHP [`getenv()`](https://www.php.net/manual/en/function.getenv.php) function. You can retrieve your Twilio credentials stored in your `.env` from the earlier parts of this tutorial. After creating an instance of the Twilio Client, you can then proceed to send an SMS by calling the `$client->messages->create()` method. This method accepts two arguments of a receiver which can either be a `string` or an `array` of phone numbers and an *array* with the properties of `from` and `body` where `from` is your active Twilio phone number and `body` is the text you want to be sent to the *recipients*. 
 
 ## Creating Routes
 
