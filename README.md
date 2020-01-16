@@ -249,7 +249,7 @@ The *Twilio Client SDK* requires your *Twilio credentials* to be instantiated, u
 
 ## Creating Routes
 
-Having written out the needed logic for your application, next step is to make the methods accessible by creating a route to which calls your controller method. Open `routes/web.php` and  make the following changes:
+The next step is to make the methods we just created accessible via a route that calls your controller method. Open `routes/web.php` and make the following changes:
 
     <?php
     
