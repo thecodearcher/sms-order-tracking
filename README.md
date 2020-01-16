@@ -270,7 +270,7 @@ The next step is to make the methods we just created accessible via a route that
         return Orders::all();
     });
     
-    Route::post('/track-order', "OrderController@getOrder");
+    Route::post('/order', "OrderController@getOrder");
 
 ***NOTE:** The GET `/` route has been modified to return all the orders in your orders table as you will need to make use of an `order_id` to test your application.*
 
@@ -297,7 +297,7 @@ Before proceeding, you have to exclude your route from [CSRF protection](https:/
          * @var array
          */
         protected $except = [
-            "/track-order"
+            "/order"
         ];
     }
 
@@ -327,7 +327,7 @@ Now, copy out your `forwarding` URL as this will be used shortly.
 
 ### Updating Twilio phone number configuration
 
-Next, you need to update the webhook URL for your Twilio phone number' SMS configuration. This will allow Twilio make request to your application when an SMS message is received. Head over to the [active phone number](https://www.twilio.com/console/phone-numbers/incoming) section on your Twilio console and select your active phone number from the list which will be used as the phone number for receiving messages. Scroll down to the Messaging segment and update the webhook URL for the field labeled “A message comes in” as shown below:
+Next, you need to update the webhook URL for your Twilio phone number's SMS configuration. This will allow Twilio to forward requests to your application when an SMS message is received. Head over to the [active phone number](https://www.twilio.com/console/phone-numbers/incoming) section in your Twilio console and select your active phone number from the list. This number will be used as the phone number for receiving messages. Scroll down to the "Messaging" section and update the webhook URL for the field labeled “A message comes in” as shown below. Be sure to append `/order` to the end of your forwarding URL you copied earlier.
 
 ![https://paper-attachments.dropbox.com/s_14AED1E729777868A76C728380D4E7434CFBFCFA0C71AD83ED009C3DCFE403E8_1574602377427_Group+12.png](https://paper-attachments.dropbox.com/s_14AED1E729777868A76C728380D4E7434CFBFCFA0C71AD83ED009C3DCFE403E8_1574602377427_Group+12.png)
 
