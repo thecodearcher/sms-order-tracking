@@ -333,13 +333,13 @@ Next, you need to update the webhook URL for your Twilio phone number' SMS confi
 
 ## Testing
 
-Awesome! Now you have both your application running and exposed to the web, you can proceed to carry out the final test. To do this, simply send a text message to your active Twilio number with any of the `order_id` (this can be gotten by opening the `/` route on your browser) and you should get a response back depending on the `order_id` you sent.
+Awesome! Now that you have both your application running and exposed to the web, you can proceed to carry out the final test. Send a text message to your active Twilio number with any of the `order_id` (this can be gotten by opening the `/` route on your browser) and you should get a response back depending on the `order_id` you sent.
 
 ## Conclusion
 
-At this point, you should have a working SMS based order tracking system. And with that, you have also learned how to make use of Laravel to accomplish this using Twilio’s programmable SMS and also how to expose your local server using ngrok. If you will like to take a look at the complete source code for this tutorial, you can find it on [Github.](https://github.com/thecodearcher/sms-order-tracking)
+You should now have a working SMS based order tracking system. You should have also learned how to make use of Laravel to accomplish this using Twilio’s programmable SMS and how to expose your local server using ngrok. If you would like to take a look at the complete source code for this tutorial, you can find it on [Github.](https://github.com/thecodearcher/sms-order-tracking)
 
-I’d love to answer any question(s) you might have concerning this tutorial. You can reach me via
+I’d love to answer any question(s) you might have concerning this tutorial. You can reach me via:
 
 - Email: [brian.iyoha@gmail.com](mailto:brian.iyoha@gmail.com)
 - Twitter: [thecodearcher](https://twitter.com/thecodearcher)
