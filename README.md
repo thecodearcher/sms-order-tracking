@@ -303,7 +303,7 @@ Before proceeding, you have to exclude your route from [CSRF protection](https:/
 
 ## Setting up Twilio Webhook For Responding To SMS
 
-As you might have figured, you will need a way to *alert* your application when an SMS is sent to your Twilio phone number. And one of the best ways to allow such communication to your application from external services is via webhooks. Twilio supports using webhooks to send an HTTP request to your application after an event occurs such as receiving an SMS or getting an incoming call depending on your configuration. Now to allow Twilio to send this *request* to your application, you must first configure your webhook URL from your Twilio console.
+As you might have figured, you will need a way to *alert* your application when an SMS is sent to your Twilio phone number. One of the best ways to allow such communication to your application from external services is via [webhooks](https://www.twilio.com/docs/glossary/what-is-a-webhook). Twilio supports using webhooks to send an HTTP request to your application after an event occurs, such as receiving an SMS or getting an incoming call. To allow Twilio to send this *request* to your application, you must first configure your webhook URL from your Twilio console.
 
 ### Exposing Your Application To The Internet
 
