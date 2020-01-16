@@ -18,11 +18,11 @@ In order to follow this tutorial, you will need:
 
 ## Project Setup
 
-We will start off by creating a new Laravel project. This can be done either using the [Laravel installer](https://laravel.com/docs/5.8#installation) or [Composer](https://getcomposer.org/). We will be making use of the Laravel installer in this tutorial. If you don’t have it installed, you can check how to set it up from the [Laravel documentation](https://laravel.com/docs/master). To generate a Laravel project using the Laravel Installer, run the following command on your terminal:
+We will begin by creating a new Laravel project. This can be done either using the [Laravel installer](https://laravel.com/docs/5.8#installation) or [Composer](https://getcomposer.org/). In this tutorial we will be making use of the Laravel installer. If you don’t have it installed, you can learn how to set it up from the [Laravel documentation](https://laravel.com/docs/master). To generate a Laravel project using the Laravel Installer, run the following command on your terminal:
 
     $ laravel new order-tracking-sms
 
-Next, set up a database for the application. For this tutorial, we will make use of [MySQL](https://www.mysql.com/) database.  If you don't have MySQL installed on your local machine, then head over to the [official site](https://www.mysql.com/downloads/) to get it installed for your platform of choice. After successful installation, open up your terminal and run the following to login to MySQL:
+Next, set up a database for the application. For this tutorial, we will make use of a [MySQL](https://www.mysql.com/) database.  If you don't have MySQL installed on your local machine, head over to the [official site](https://www.mysql.com/downloads/) to get it installed on your platform of choice. After successful installation, open up your terminal and run the following to login to MySQL:
 
     $ mysql -u {your_user_name}
 
@@ -43,7 +43,7 @@ Next, install the [Twilio SDK](https://www.twilio.com/docs/libraries/php) for PH
 
     $ composer require twilio/sdk
 
-If you don’t have composer installed on your local machine you can do so by following the instructions in [their documentation](https://getcomposer.org/doc/00-intro.md).
+If you don’t have Composer installed on your local machine you can do so by following the instructions in [their documentation](https://getcomposer.org/doc/00-intro.md).
 
 ### Setting up Twilio SDK
 
